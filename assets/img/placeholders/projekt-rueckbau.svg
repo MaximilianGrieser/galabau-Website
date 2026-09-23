@@ -1,0 +1,17 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Platzhalterbild: Baggerarbeiten und Rückbau">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9dfd6"/>
+      <stop offset="100%" stop-color="#d3c1ac"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg4)"/>
+  <g fill="#8a5a2b" opacity="0.5">
+    <rect x="330" y="200" width="20" height="160"/>
+    <rect x="250" y="350" width="180" height="24" rx="6"/>
+    <circle cx="250" cy="362" r="28"/>
+    <polygon points="430,340 480,300 500,330 460,375"/>
+  </g>
+  <text x="400" y="440" text-anchor="middle" font-family="system-ui, sans-serif" font-size="26" fill="#7a5228" font-weight="700">Baggerarbeiten &amp; Rückbau</text>
+  <text x="400" y="472" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#8a6b45">Platzhalterbild – reales Projektfoto folgt</text>
+</svg>

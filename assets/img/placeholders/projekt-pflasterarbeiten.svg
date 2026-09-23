@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Platzhalterbild: Pflasterarbeiten">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e4e1d8"/>
+      <stop offset="100%" stop-color="#cfc9b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  <g fill="#8a7f63" opacity="0.5">
+    <rect x="120" y="330" width="70" height="70"/>
+    <rect x="200" y="330" width="70" height="70"/>
+    <rect x="280" y="330" width="70" height="70"/>
+    <rect x="360" y="330" width="70" height="70"/>
+    <rect x="440" y="330" width="70" height="70"/>
+    <rect x="520" y="330" width="70" height="70"/>
+    <rect x="600" y="330" width="70" height="70"/>
+    <rect x="160" y="410" width="70" height="70"/>
+    <rect x="240" y="410" width="70" height="70"/>
+    <rect x="320" y="410" width="70" height="70"/>
+    <rect x="400" y="410" width="70" height="70"/>
+    <rect x="480" y="410" width="70" height="70"/>
+    <rect x="560" y="410" width="70" height="70"/>
+  </g>
+  <text x="400" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" fill="#6b6042" font-weight="700">Pflasterarbeiten &amp; Wegebau</text>
+  <text x="400" y="265" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#8a7f63">Platzhalterbild – reales Projektfoto folgt</text>
+</svg>

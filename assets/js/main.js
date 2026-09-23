@@ -2,7 +2,11 @@
 // automatisiertem Scraping aus dem statischen HTML zu schützen.
 document.querySelectorAll('.email-link').forEach(link => {
   const email = atob(link.dataset.email);
-  link.href = 'mailto:' + email;
+  let href = 'mailto:' + email;
+  if (link.dataset.subject) {
+    href += '?subject=' + encodeURIComponent(link.dataset.subject);
+  }
+  link.href = href;
   const textEl = link.querySelector('.email-text');
   if (textEl) textEl.textContent = email;
 });
