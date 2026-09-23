@@ -71,3 +71,15 @@ footer {
 footer a {
   color: var(--color-primary);
 }
+
+.muted {
+  color: #555;
+}
+
+.notice {
+  background: #f4f7f2;
+  border-left: 4px solid var(--color-primary);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0 2rem;
+  font-size: 0.95rem;
+}
