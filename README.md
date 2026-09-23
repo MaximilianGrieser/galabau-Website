@@ -42,7 +42,8 @@ Bei jedem Push auf `main` laufen automatisiert per GitHub Actions:
 
 ## Offene Punkte
 
-- [ ] Inhalte (Texte, Bilder, Kontaktdaten) einpflegen
+- [x] Inhalte (Texte, Kontaktdaten) einpflegen – Bilder sind noch Platzhalter
 - [ ] `robots.txt` Sitemap-URL auf die echte Domain anpassen
-- [ ] Impressum & Datenschutzerklärung mit echten Firmendaten füllen
+- [x] Impressum & Datenschutzerklärung mit echten Betreiberdaten füllen
 - [ ] GitHub-Environment `production` mit Strato-Secrets/-Variable anlegen
+- [ ] Falls die Seite real bei Strato gehostet wird: Auftragsverarbeitungsvertrag (AVV) mit Strato prüfen/abschließen (siehe Datenschutzerklärung, Abschnitt 5)

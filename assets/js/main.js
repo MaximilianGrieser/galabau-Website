@@ -1,3 +1,7 @@
+// Copyright-Jahr im Footer immer aktuell halten, ohne die Seite manuell pflegen zu müssen.
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 // Kontaktdaten werden erst zur Laufzeit entschlüsselt und der mailto:/tel:-Link
 // wird erst im Klick-Moment gebaut. So taucht die Adresse nie im statischen HTML
 // oder im href-Attribut des gerenderten DOM auf – nur ein echter Klick löst die
