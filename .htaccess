@@ -1,0 +1,7 @@
+# Verzeichnis-Listing deaktivieren
+Options -Indexes
+
+# Zugriff auf versteckte Dateien verhindern (z. B. .git, .env)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

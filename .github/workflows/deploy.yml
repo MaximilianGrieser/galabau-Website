@@ -1,0 +1,35 @@
+name: Deploy to Strato
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    uses: ./.github/workflows/tests.yml
+    secrets: inherit
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare deploy files
+        run: |
+          mkdir -p deploy
+          cp -r index.html impressum.html datenschutz.html robots.txt .htaccess assets deploy/
+
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+        with:
+          username: ${{ secrets.STRATO_SFTP_USERNAME }}
+          server: ${{ secrets.STRATO_SFTP_HOST }}
+          port: 22
+          password: ${{ secrets.STRATO_SFTP_PASSWORD }}
+          local_path: './deploy/*'
+          remote_path: ${{ vars.STRATO_REMOTE_DIR }}
+          sftp_only: true
