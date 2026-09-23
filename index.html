@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galabau – Ihr Partner für Garten- und Landschaftsbau</title>
+  <title>GaLaBau – Ihr Partner für Garten- und Landschaftsbau</title>
   <meta name="description" content="Vater-Sohn-Betrieb für Garten- und Landschaftsbau: Gartengestaltung, Pflasterarbeiten, Rückbau, Kernbohrungen, SolarLux-Wintergärten und mehr.">
+  <meta name="theme-color" content="#1c4522">
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="#start" class="logo">GaLaBau</a>
-      <ul>
+      <a href="#start" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 3c-5 1-9 5-9 10a8 8 0 0 0 8 8c1-5 5-9 10-10-1-5-5-8-9-8Z"/>
+          <path stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.45" d="M4 20 14 10"/>
+        </svg>
+        GaLaBau
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menü öffnen">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul id="navLinks">
         <li><a href="#leistungen">Leistungen</a></li>
         <li><a href="#projekte">Projekte</a></li>
         <li><a href="#ueber-uns">Über uns</a></li>
@@ -23,83 +35,161 @@
 
   <main>
     <section id="start" class="hero">
-      <h1>Ihr Partner für Garten- und Landschaftsbau</h1>
-      <p>Vater und Sohn, ein Faible für Baumaschinen – und die passende Lösung für Ihr Garten- und Außenanlagenprojekt, von der Planung bis zur Umsetzung.</p>
-      <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage: Garten- und Landschaftsbau" href="#">Jetzt unverbindlich anfragen</a>
+      <div class="hero-inner">
+        <span class="eyebrow">Familienbetrieb für Garten- &amp; Landschaftsbau</span>
+        <h1>Ihr Partner für Garten- und Landschaftsbau</h1>
+        <p>Vater und Sohn, ein Faible für Baumaschinen – und die passende Lösung für Ihr Garten- und Außenanlagenprojekt, von der Planung bis zur Umsetzung.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-light email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage: Garten- und Landschaftsbau" href="#">Jetzt unverbindlich anfragen</a>
+          <a class="btn btn-ghost" href="#leistungen">Leistungen ansehen</a>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#ffffff" d="M0,32 C240,80 480,0 720,16 C960,32 1200,88 1440,40 L1440,80 L0,80 Z"/>
+      </svg>
     </section>
 
     <section id="leistungen">
-      <h2>Leistungen</h2>
-      <ul class="service-list">
-        <li>Gartengestaltung &amp; -planung</li>
-        <li>Pflasterarbeiten &amp; Wegebau</li>
-        <li>Verlegen von Rollrasen</li>
-        <li>Vorbereitung für den Poolbauer</li>
-        <li>Kleinere Baggerarbeiten</li>
-        <li>Rückbau im bestehenden Garten</li>
-        <li>Wurzelentfernung</li>
-        <li>Abbruch kleinerer bestehender Strukturen</li>
-        <li>Kernbohrungen</li>
-        <li>Absieben von Humus</li>
-        <li>Planung und Montage von SolarLux-Wintergärten</li>
-      </ul>
-      <p class="note">Hinweis: Bei allen Arbeiten wird die Mitarbeit des Bauherren vorausgesetzt.</p>
-      <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage zu einer Leistung" href="#">Leistung anfragen</a>
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <span class="eyebrow">Was wir tun</span>
+          <h2>Leistungen</h2>
+          <p>Von der ersten Planung bis zu den Arbeiten, die andere Betriebe oft nicht abdecken.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Gartengestaltung &amp; -planung</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Pflasterarbeiten &amp; Wegebau</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Verlegen von Rollrasen</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Vorbereitung für den Poolbauer</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Kleinere Baggerarbeiten</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Rückbau im bestehenden Garten</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Wurzelentfernung</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Abbruch kleinerer bestehender Strukturen</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Kernbohrungen</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Absieben von Humus</span>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-4.2-4.2 1.4-1.4 2.8 2.8 6-6 1.4 1.4-7.4 7.4Z"/></svg></span>
+            <span>Planung und Montage von SolarLux-Wintergärten</span>
+          </div>
+        </div>
+
+        <div class="notice reveal">
+          <strong>Hinweis:</strong>&nbsp;Bei allen Arbeiten wird die Mitarbeit des Bauherren vorausgesetzt.
+        </div>
+
+        <div class="center-cta">
+          <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage zu einer Leistung" href="#">Leistung anfragen</a>
+        </div>
+      </div>
     </section>
 
-    <section id="projekte">
-      <h2>Projekte</h2>
-      <p class="muted">Ein Auszug aus unserer Arbeit – die folgenden Bilder sind Platzhalter, echte Projektfotos folgen in Kürze.</p>
-      <div class="project-grid">
-        <figure class="project-card">
-          <img src="assets/img/placeholders/projekt-gartengestaltung.svg" alt="Platzhalterbild: Gartengestaltung" loading="lazy">
-          <figcaption>Gartengestaltung &amp; -planung</figcaption>
-        </figure>
-        <figure class="project-card">
-          <img src="assets/img/placeholders/projekt-pflasterarbeiten.svg" alt="Platzhalterbild: Pflasterarbeiten und Wegebau" loading="lazy">
-          <figcaption>Pflasterarbeiten &amp; Wegebau</figcaption>
-        </figure>
-        <figure class="project-card">
-          <img src="assets/img/placeholders/projekt-wintergarten.svg" alt="Platzhalterbild: SolarLux-Wintergarten" loading="lazy">
-          <figcaption>SolarLux-Wintergarten</figcaption>
-        </figure>
-        <figure class="project-card">
-          <img src="assets/img/placeholders/projekt-rueckbau.svg" alt="Platzhalterbild: Baggerarbeiten und Rückbau" loading="lazy">
-          <figcaption>Baggerarbeiten &amp; Rückbau</figcaption>
-        </figure>
+    <section id="projekte" class="section-tint">
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <span class="eyebrow">Einblicke</span>
+          <h2>Projekte</h2>
+          <p>Ein Auszug aus unserer Arbeit – die folgenden Bilder sind Platzhalter, echte Projektfotos folgen in Kürze.</p>
+        </div>
+
+        <div class="project-grid">
+          <figure class="project-card reveal">
+            <img src="assets/img/placeholders/projekt-gartengestaltung.svg" alt="Platzhalterbild: Gartengestaltung" loading="lazy">
+            <figcaption>Gartengestaltung &amp; -planung</figcaption>
+          </figure>
+          <figure class="project-card reveal">
+            <img src="assets/img/placeholders/projekt-pflasterarbeiten.svg" alt="Platzhalterbild: Pflasterarbeiten und Wegebau" loading="lazy">
+            <figcaption>Pflasterarbeiten &amp; Wegebau</figcaption>
+          </figure>
+          <figure class="project-card reveal">
+            <img src="assets/img/placeholders/projekt-wintergarten.svg" alt="Platzhalterbild: SolarLux-Wintergarten" loading="lazy">
+            <figcaption>SolarLux-Wintergarten</figcaption>
+          </figure>
+          <figure class="project-card reveal">
+            <img src="assets/img/placeholders/projekt-rueckbau.svg" alt="Platzhalterbild: Baggerarbeiten und Rückbau" loading="lazy">
+            <figcaption>Baggerarbeiten &amp; Rückbau</figcaption>
+          </figure>
+        </div>
+
+        <div class="center-cta">
+          <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Frage zu einem Projekt" href="#">Ähnliches Projekt anfragen</a>
+        </div>
       </div>
-      <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Frage zu einem Projekt" href="#">Ähnliches Projekt anfragen</a>
     </section>
 
     <section id="ueber-uns">
-      <h2>Über uns</h2>
-      <p>
-        Hinter Galabau steht ein Vater-Sohn-Duo, das seine Leidenschaft für Baumaschinen zum
-        Beruf gemacht hat. Was als gemeinsames Interesse an Technik und schwerem Gerät begann,
-        ist über die Jahre zu einer festen Nische im Garten- und Landschaftsbau gewachsen: Wir
-        übernehmen genau die Arbeiten, die klassische Gartenbaubetriebe oft nicht abdecken –
-        von kleineren Baggerarbeiten über Kernbohrungen bis zur Vorbereitung für den Poolbau.
-      </p>
-      <p>
-        Durch den direkten Zugriff auf eigene Maschinen und die eingespielte Zusammenarbeit
-        als Familienbetrieb können wir flexibel, unkompliziert und mit kurzen Wegen planen.
-        Ob Rückbau bestehender Strukturen, Wurzelentfernung oder die Montage eines
-        SolarLux-Wintergartens – wir packen die Aufgaben an, bei denen handwerkliches
-        Geschick auf technisches Verständnis für Maschinen trifft.
-      </p>
-      <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Frage an das Team" href="#">Team kontaktieren</a>
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <span class="eyebrow">Wer wir sind</span>
+          <h2>Über uns</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Hinter GaLaBau steht ein Vater-Sohn-Duo, das seine Leidenschaft für Baumaschinen zum
+              Beruf gemacht hat. Was als gemeinsames Interesse an Technik und schwerem Gerät begann,
+              ist über die Jahre zu einer festen Nische im Garten- und Landschaftsbau gewachsen: Wir
+              übernehmen genau die Arbeiten, die klassische Gartenbaubetriebe oft nicht abdecken –
+              von kleineren Baggerarbeiten über Kernbohrungen bis zur Vorbereitung für den Poolbau.
+            </p>
+            <p>
+              Durch den direkten Zugriff auf eigene Maschinen und die eingespielte Zusammenarbeit
+              als Familienbetrieb können wir flexibel, unkompliziert und mit kurzen Wegen planen.
+              Ob Rückbau bestehender Strukturen, Wurzelentfernung oder die Montage eines
+              SolarLux-Wintergartens – wir packen die Aufgaben an, bei denen handwerkliches
+              Geschick auf technisches Verständnis für Maschinen trifft.
+            </p>
+            <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Frage an das Team" href="#">Team kontaktieren</a>
+          </div>
+          <div class="about-quote reveal">
+            <blockquote>„Vater &amp; Sohn. Eine Leidenschaft für Baumaschinen. Eine Nische im GaLaBau.“</blockquote>
+            <cite>Das GaLaBau-Team</cite>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>
-        Sie haben ein Projekt im Kopf? Schreiben Sie uns – wir melden uns zeitnah mit einer
-        Einschätzung zurück.
-      </p>
-      <p>
-        E-Mail: <a class="email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage über die Website" href="#"><span class="email-text">wird geladen…</span></a>
-      </p>
-      <a class="btn email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage über die Website" href="#">Jetzt E-Mail schreiben</a>
+    <section id="kontakt" class="section-tint">
+      <div class="section-inner">
+        <div class="cta-banner reveal">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Sie haben ein Projekt im Kopf?</h2>
+          <p>Schreiben Sie uns – wir melden uns zeitnah mit einer Einschätzung zurück.</p>
+          <a class="btn btn-light email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage über die Website" href="#">Jetzt E-Mail schreiben</a>
+          <a class="contact-email email-link" data-email="bWF4LWdyaWVzZXJAZ214LmRl" data-subject="Anfrage über die Website" href="#"><span class="email-text">wird geladen…</span></a>
+        </div>
+      </div>
     </section>
   </main>
 
