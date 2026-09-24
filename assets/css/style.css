@@ -264,25 +264,27 @@ nav ul a:focus-visible::after {
   pointer-events: none;
 }
 
-.hero-art-excavator {
-  left: 1%;
-  width: clamp(180px, 22vw, 320px);
-  height: auto;
-  opacity: 0.9;
+.hero-art-treeline {
+  left: 0;
+  width: 100%;
+  height: clamp(150px, 24vw, 260px);
+  fill: #ffffff;
 }
 
-.hero-art-excavator .art-cutout {
-  fill: var(--green-700);
+.hero-art-treeline use {
+  opacity: 0.17;
 }
 
-.hero-art-tree {
-  right: 3%;
-  width: clamp(120px, 15vw, 220px);
-  height: auto;
-  fill: rgba(255, 255, 255, 0.18);
+.hero-art-treeline .art-path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 34;
+  stroke-linecap: round;
+  stroke-dasharray: 2 42;
+  opacity: 0.4;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
   .hero-art {
     display: none;
   }
