@@ -538,15 +538,6 @@ section {
   margin: 0 auto 1.75rem;
 }
 
-.cta-banner .contact-email {
-  display: inline-block;
-  margin-top: 1.25rem;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 /* Footer */
 footer {
   border-top: 1px solid var(--green-100);
