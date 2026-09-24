@@ -242,8 +242,6 @@ nav ul a:focus-visible::after {
 
 /* Hero */
 .hero {
-  position: relative;
-  overflow: hidden;
   background: linear-gradient(135deg, var(--green-800), var(--green-600) 60%, var(--green-500));
   color: #fff;
   padding: 6rem 1.5rem 7rem;
@@ -251,43 +249,8 @@ nav ul a:focus-visible::after {
 }
 
 .hero-inner {
-  position: relative;
-  z-index: 1;
   max-width: 720px;
   margin: 0 auto;
-}
-
-.hero-art {
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.hero-art-treeline {
-  left: 0;
-  width: 100%;
-  height: clamp(150px, 24vw, 260px);
-  fill: #ffffff;
-}
-
-.hero-art-treeline use {
-  opacity: 0.17;
-}
-
-.hero-art-treeline .art-path {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 34;
-  stroke-linecap: round;
-  stroke-dasharray: 2 42;
-  opacity: 0.4;
-}
-
-@media (max-width: 480px) {
-  .hero-art {
-    display: none;
-  }
 }
 
 .eyebrow {
