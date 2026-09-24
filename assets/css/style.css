@@ -261,7 +261,6 @@ nav ul a:focus-visible::after {
   position: absolute;
   bottom: 0;
   z-index: 0;
-  fill: rgba(255, 255, 255, 0.14);
   pointer-events: none;
 }
 
@@ -269,6 +268,11 @@ nav ul a:focus-visible::after {
   left: 1%;
   width: clamp(180px, 22vw, 320px);
   height: auto;
+  opacity: 0.9;
+}
+
+.hero-art-excavator .art-cutout {
+  fill: var(--green-700);
 }
 
 .hero-art-tree {
